@@ -10,8 +10,6 @@ graph TD
     View -->|Renderiza HTML| User
 ```
 
-![Diagrama MVC](diagrama.png)
-
 # Qué es MVC?
 
 * MVC es un patrón de arquitectura de software que se utiliza para crear aplicaciones web.
@@ -67,4 +65,5 @@ define("DSN", "mysql:host=" . SERVER . ";dbname=" . DB); -> La cadena de conexi�
 * El index es el punto de entrada de nuestra aplicacion. Es el archivo que se ejecuta cuando entramos a nuestra aplicacion.
 * En este caso, el index es el que se encarga de crear un objeto de tipo Controller y obtener los datos de la tabla vehiculos.
 * Y mostrarlos al cliente, podes tener un formulario, una tabla, etc.
+
 
