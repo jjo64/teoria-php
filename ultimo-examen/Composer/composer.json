@@ -1,0 +1,16 @@
+{
+    "name": "teoria/composer", 
+    "description": "Es un test para el repositorio de la teoria", 
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Teoria\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jjo64"
+        }
+    ],
+    "require": {}
+}

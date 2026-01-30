@@ -29,6 +29,14 @@
         #     $this->db->rollBack();
         # }
 
+    # Punto importante sobre querys:
+
+        * La mayoria van a funcionar con preapare -> porque casi siempre vas a recibir parametros en la funcion. Osea que estas recogiendo datos del cliente. Te puede mandar datos corruptos, sin validar o inyeccion de codigo.
+
+    # Metodos Soportes (PDO)
+
+        * rowCount() -> Nos devuelve las filas afectadas de una query (Si nos devuelve 0 la query se ejecuto pero no realizó ningun cambio)
+
     # Ejemplo practico:
 
     * Tenemos una tabla llamada cuentas con dos columnas: id y saldo.
