@@ -1,10 +1,23 @@
-# Que es MVC?
 
-* MVC es un patron de arquitectura de software que se utiliza para crear aplicaciones web.
-* MVC significa Model-View-Controller.
-* Model es la parte de la aplicacion que se encarga de la logica de negocio.
-* View es la parte de la aplicacion que se encarga de la presentacion de los datos.
-* Controller es la parte de la aplicacion que se encarga de la logica de control.
+# Diagrama del funcionamiento
+
+```mermaid
+graph TD
+    User((Usuario)) -->|Solicita página| Controller[Controlador]
+    Controller -->|Pide datos| Model[Modelo]
+    Model -->|Retorna datos| Controller
+    Controller -->|Pasa datos| View[Vista]
+    View -->|Renderiza HTML| User
+```
+
+![Diagrama MVC](diagrama.png)
+
+# Qué es MVC?
+
+* MVC es un patrón de arquitectura de software que se utiliza para crear aplicaciones web.
+* **Model**: Lógica de negocio y datos (Base de datos).
+* **View**: Presentación (HTML/CSS que ve el usuario).
+* **Controller**: Intermediario que recibe peticiones y decide qué hacer.
 
 # Config
 
